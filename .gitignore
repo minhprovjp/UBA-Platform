@@ -1,0 +1,33 @@
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Generated data and state files
+# KHÔNG đưa CSDL và các file CSV đã phân tích lên Git
+data/app_database.db
+data/parsed_*.csv
+data/*.meta
+engine/.mysql_parser_state
+engine/.postgres_parser_state.json
+feedback.csv
+
+# Trained models
+# Các mô hình đã huấn luyện có thể rất lớn và đặc thù cho dữ liệu
+trained_models/
+
+# Logs folder
+logs/
+
+# Configuration files that may contain secrets
+# Chúng ta sẽ tạo một file template để thay thế
+config.py
+engine_config.json
+
+# Windows specific
+Thumbs.db
