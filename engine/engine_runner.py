@@ -42,12 +42,12 @@ class AnalysisEngine:
                 "script": POSTGRES_PARSER_SCRIPT_PATH,
                 "input": SOURCE_POSTGRES_LOG_PATH,
                 "output": PARSED_POSTGRES_LOG_FILE_PATH
-            # },
-            # {
-            #     "name": "MongoDB",
-            #     "script": MONGO_PARSER_SCRIPT_PATH,
-            #     "input": SOURCE_MONGO_LOG_PATH,
-            #     "output": PARSED_MONGO_LOG_FILE_PATH
+            },
+            {
+                "name": "MongoDB",
+                "script": MONGO_PARSER_SCRIPT_PATH,
+                "input": SOURCE_MONGO_LOG_PATH,
+                "output": PARSED_MONGO_LOG_FILE_PATH
             }
         ]
         
@@ -81,7 +81,7 @@ class AnalysisEngine:
         csv_files_to_read = [
             PARSED_MYSQL_LOG_FILE_PATH,
             PARSED_POSTGRES_LOG_FILE_PATH,
-            # PARSED_MONGO_LOG_FILE_PATH
+            PARSED_MONGO_LOG_FILE_PATH
         ]
         
         for csv_file in csv_files_to_read:
