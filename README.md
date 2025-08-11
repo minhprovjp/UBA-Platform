@@ -90,4 +90,3 @@ uvicorn backend_api.main_api:app --reload
 
 1.  Mở trình duyệt và truy cập: **[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)**
 2.  Bạn sẽ thấy giao diện tài liệu Swagger UI.
-3.  Hãy thử dùng các endpoint trong mục "Anomalies" và "Engine Control" để kiểm tra.
